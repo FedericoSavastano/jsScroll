@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  /* background: gold; */
+  min-height: 1500px;
+  scroll-behavior: smooth;
+}
+
+section {
+  position: relative;
+  width: 100%;
+
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+section:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  /* background: linear-gradient(to top, gold, transparent); */
+  z-index: 10000;
+}
+
+section:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background: linear-gradient(to top, lightblue, transparent); */
+  /* background: gold; */
+  z-index: 10000;
+  mix-blend-mode: color;
+}
+section img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+#sec2 {
+  margin-bottom: 0;
+}
+#text {
+  position: relative;
+  color: #fff;
+  font-size: 10em;
+  z-index: 1;
+  padding-top: 20px;
+  text-shadow: -2px -2px rgba(255, 255, 0, 0.582),
+    2px 2px rgba(189, 183, 107, 0.534);
+}
+#text2 {
+  position: relative;
+  margin-top: 140px;
+  padding-top: 80px;
+  color: #fff;
+  font-size: 10em;
+  z-index: 1;
+  text-shadow: -4px -4px rgba(173, 216, 230, 0.466),
+    4px 4px rgba(0, 0, 255, 0.432);
+}
+
+#mar {
+  z-index: 2;
+}
+
+#pez,
+#piso {
+  z-index: 2;
+}
+#pez {
+  margin-left: 100px;
+}
+#peces {
+  margin-left: -40px;
+  opacity: 80%;
+  filter: blur(2px);
+}
+#pisob {
+  opacity: 40%;
+  filter: blur(4px);
+}
+#piso {
+  opacity: 90%;
+  filter: blur(1px) brightness(80%);
+}
+#cardumen {
+  opacity: 80%;
+  filter: blur(2px);
+}
+#secmid {
+  z-index: -3;
+  height: 15em;
+}
+#olas {
+  height: 250%;
+}
+
+@media screen and (max-width: 400px) {
+  #text,
+  #text2 {
+    position: relative;
+    color: #fff;
+    font-size: 4em;
+    z-index: 1;
+    line-height: 0.9;
+  }
+  #text2 {
+    padding-bottom: 60px;
+  }
+  #sol {
+    margin-top: 100px;
+    height: 200px;
+    z-index: 999999999;
+    object-fit: fill;
+  }
+  #pez {
+    margin-top: 100px;
+    margin-left: 1000px;
+    height: 200px;
+    z-index: 999999999;
+    object-fit: fill;
+  }
+  #cardumen {
+    margin-left: 30px;
+    width: 200%;
+  }
+  #peces {
+    width: 100vh;
+  }
+
+  #sec2 img {
+    object-fit: cover;
+  }
+}
